@@ -1,0 +1,312 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=raleway');
+
+        @font-face {
+            font-family: "Florentia";
+            src: url("../font/Florentia-thin-trial.ttf");
+            /* Endereço da fonte personalizada */
+        }
+
+        body {
+            background-color: #e27a7a;
+            margin: 0;
+            padding: 0;
+            font-family: "Raleway", "Florentia", sans-serif;
+        }
+
+        header {
+            background: rgb(212, 45, 45);
+            padding: 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 100%;
+            max-height: 175px;
+            object-fit: cover;
+        }
+
+        .avatar {
+            width: 150px;
+            /* Ajuste conforme necessário */
+            height: 150px;
+            /* Ajuste conforme necessário */
+            border: 3px solid #000000;
+            /* Adiciona uma borda sólida ao redor do avatar */
+            border-radius: 50%;
+            /* Torna a borda arredondada */
+            margin-right: 20px;
+            /* Espaço entre o avatar e as informações */
+        }
+
+        .info-container {
+            display: flex;
+            align-items: center;
+            /* Alinha verticalmente o centro do avatar e das informações */
+            margin: 20px auto;
+            /* Centraliza o contêiner e adiciona margem superior e inferior */
+            width: 80%;
+            /* Ajuste conforme necessário */
+            flex-wrap: wrap;
+            /* Adiciona wrap para dispositivos menores */
+            gap: 20px;
+            /* Adiciona espaço entre o avatar e a barra_superior */
+        }
+
+        .barra_superior {
+            border-bottom: 1px solid rgb(212, 45, 45);
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            font-size: 18px;
+            flex: 1;
+            /* Faz com que a .barra_superior ocupe o espaço restante */
+        }
+
+        .titulo {
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .nav {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: rgb(129, 9, 9);
+            padding: 0 15px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        article {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        article p {
+            text-indent: 20px;
+            /* Ajuste o valor conforme necessário */
+            margin-bottom: 20px;
+            /* Adiciona espaçamento abaixo do parágrafo */
+        }
+
+        article img {
+            width: 100%;
+            max-width: 600px;
+            /* Tamanho consistente para todas as imagens */
+            height: auto;
+            margin-bottom: 20px;
+            border: 2px solid #000000;
+            
+        }
+
+        .image-group {
+            display: flex;
+            justify-content: 50px;
+            gap: 20px;
+            /* Espaço entre as imagens */
+            margin: 20px auto;
+            /* Centraliza o grupo de imagens */
+            
+        }
+
+        .image-group img {
+            width: 100%;
+            max-width: 400px;
+            /* Mesma largura máxima que as imagens fora do grupo */
+            height: auto;
+            border: 2px solid #000000;
+            /* Adiciona uma borda sólida ao redor das imagens */
+        }
+
+
+        footer {
+            background: rgb(212, 45, 45);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 3px solid rgb(0, 0, 0);
+        }
+
+        table {
+            background-color: rgb(212, 45, 45);
+            font-size: 14px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-bottom-color: black;
+            margin: 20px 0;
+            /* Adiciona espaçamento acima e abaixo da tabela */
+            width: 100%;
+            /* Faz com que a tabela ocupe toda a largura disponível */
+        }
+
+        table th,
+        table td {
+            border: 1px solid #000;
+            /* Borda preta para as células da tabela */
+            padding: 10px;
+            /* Espaçamento interno das células */
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            /* Espaço entre os itens da lista */
+        }
+
+        .list {
+            flex: 1;
+            min-width: 200px;
+            margin-right: 10px;
+            border: 1px solid rgb(212, 45, 45);
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="img/chuva.jpg" alt="Imagem de Cabeçalho">
+        <h1 class="titulo">Me conhecendo</h1>
+    </header>
+
+    <!-- Novo contêiner para avatar e barra_superior -->
+    <div class="info-container">
+        <img src="img/mabel.jpeg" alt="meu avatar" class="avatar">
+        <div class="barra_superior"><b>
+                Leticia Zanichelli <br>
+                Moro em Ouro Verde <br>
+                Estou no 2° ano do ensino médio <br>
+                16/09/2024
+            </b>
+        </div>
+    </div>
+    <div class="nav">
+        <b> <a href="#Minha escola">Minha escola</a>
+            <a href="#Meu técnico">Meu técnico</a>
+            <a href="#Meu hobby">Meu hobby</a></b>
+    </div>
+    <a name="Minha escola"></a>
+    <article>
+
+        <p>
+            Olá, eu estudo na E.E. Ferdinando Ienny, estou cursando o segundo ano do ensino médio, sou há 1 ano do
+            itinerário de exatas no período matutino; Entrei nessa escola faz 4 anos que foi quando eu me mudei, ela é
+            bem diferente
+            das escolas que estudei em Campinas, como por exemplo todas as salas têm TV e vários ventiladores que,
+            inclusive, funcionam todos. As lousas são de canetão, temos internet disponível para os alunos e muitas
+            matérias.
+        </p>
+
+        <span style="padding-left: 30px;">Minhas Matérias</span> <br> <br>
+        <div class="container">
+            <div class="list">
+                <ul>
+                    <li>Matemática</li>
+                    <li>Sociologia</li>
+                    <li>Língua Portuguesa</li>
+                    <li>Biotecnologia</li>
+                    <li>Biologia</li>
+                    <li>Química</li>
+                    <li>Tecnologia e Robótica</li>
+                    <li>Geografia</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>Física</li>
+                    <li>Educação Física</li>
+                    <li>História</li>
+                    <li>Inglês</li>
+                    <li>Empreendedorismo</li>
+                    <li>Projeto de Vida</li>
+                    <li>Redação</li>
+                    <li>Educação Financeira</li>
+                </ul>
+            </div>
+        </div>
+        <br> <a name="Meu técnico"></a>
+
+        <img src="img/ferdinando_ienny.jpg" alt="Foto da Escola">
+        </ul>
+
+        <br>
+
+        <p>
+            Também estudo no período noturno na instituição ETEC Profª Carmelina Barbosa, faço o curso de Técnico em
+            informática que tem um período de duração de 3 módulos. Como já estou no 2° módulo, minhas matérias mudaram
+            em comparação com o primeiro; tenho aula todos os dias e sempre é uma aprendizagem diferente, gosto muito do
+            curso, ele me proporcionou novas amizades, uma visão diferente na área de tecnologia, me fez entender
+            realmente o que eu quero fazer da vida e me ajudou a me soltar mais; Mesmo de vez
+            em quando quase me deixando de cabelo em pé para dar conta de todas as atividades, eu não me arrependo de
+            dormir tarde se for para estar no curso e vou sentir falta de quando ele acabar.
+        </p>
+
+        <table border="1">
+            <thead>
+                <th>Programação de Computadores II </th>
+                <th>Redes de Comunicação de Aplicativos </th>
+                <th>Suporte em Informatica </th>
+                <th>Gestão de Sistemas Operacionais II </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Planejamento do Trabalho de Conclusão de Curso </th>
+                    <th>Suporte a Banco de Dados </th>
+                    <th>Operação e Configurações de aplicativos II </th>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <img src="img/EtecProfaCarmelinaBarbosa.jpg" alt="Foto da ETEC">
+        <a name="Meu hobby"></a>
+        <br>
+
+        <p>
+            Nas minhas horas vagas, eu gosto de praticar diversos hobbies, como ler livros, jogar videogame, desenhar,
+            sair com os amigos, etc. Sempre estou procurando algo novo para me manter ocupada e inspirada. Mas um dos
+            meus favoritos é assistir filmes, séries e desenhos, principalmente se tiver uma pipoca e amigos. Meus
+            gêneros
+            favoritos são terror/mistério e romance, e os filmes do Studio Ghibli e das franquias de Invocação do Mal,
+            séries como Stranger Things e desenhos como Gravity Falls são os que eu mais assisto.
+        </p>
+
+        <div class="image-group">
+            <img src="img/hobby.jpg" alt="Foto do Hobby">
+            <img src="img/Design sem nome (1).png" alt="foto dos filmes e séries">
+        </div>
+    </article>
+
+    <footer>
+        <strong>Leticia Zanichelli <br> Todos os direitos reservados © 2024</strong>
+    </footer>
+
+</body>
+
+</html>
